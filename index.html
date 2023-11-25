@@ -189,7 +189,21 @@ In a world driven by pixels and screens, we bring you a unique blend of high fas
         </div>
     </div>
 
+
 </p>
+<button id="showPictureButton">Curriculum Vitae </button>
+<div id="pictureContainer" style="display: none;">
+    <img id="hiddenPicture" src="mycv.jpg" alt="Hidden Image" width="400" height="300">
+</div>
+
+<script>
+    const showPictureButton = document.getElementById("showPictureButton");
+    const pictureContainer = document.getElementById("pictureContainer");
+
+    showPictureButton.addEventListener("click", () => {
+        pictureContainer.style.display = "block";
+    });
+</script>
 
 </body>
 
